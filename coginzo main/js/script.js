@@ -393,6 +393,51 @@ function initNav() {
   });
 }
 
+// ===================== Theme toggle =====================
+function initThemeToggle() {
+  const btn = document.getElementById("themeToggle");
+  if (!btn) return;
+  const root = document.documentElement;
+
+  const setLabel = (theme) => {
+    btn.setAttribute("aria-label", theme === "dark" ? "Switch to light theme" : "Switch to dark theme");
+  };
+  setLabel(root.getAttribute("data-theme") || "light");
+
+  btn.addEventListener("click", () => {
+    const next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+    root.setAttribute("data-theme", next);
+    localStorage.setItem("coginzo-theme", next);
+    setLabel(next);
+  });
+}
+
+// ===================== Founder photo double-tap -> portfolio =====================
+function initFounderPortfolioLinks() {
+  const photos = document.querySelectorAll(".founder-photo[data-portfolio]");
+  if (!photos.length) return;
+
+  photos.forEach(photo => {
+    const url = photo.getAttribute("data-portfolio");
+    let lastTap = 0;
+
+    // Desktop: native double-click
+    photo.addEventListener("dblclick", () => {
+      window.open(url, "_blank", "noopener");
+    });
+
+    // Touch: manual double-tap detection
+    photo.addEventListener("touchend", (e) => {
+      const now = Date.now();
+      if (now - lastTap < 350) {
+        e.preventDefault();
+        window.open(url, "_blank", "noopener");
+      }
+      lastTap = now;
+    });
+  });
+}
+
 // ===================== Scroll progress + back to top =====================
 function initScrollUtils() {
   const progress = document.getElementById("scrollProgress");
@@ -585,6 +630,8 @@ document.addEventListener("DOMContentLoaded", () => {
   renderTerms();
 
   initNav();
+  initThemeToggle();
+  initFounderPortfolioLinks();
   initScrollUtils();
   initCursorGlow();
   initReveal();

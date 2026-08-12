@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+(function(){
+  var saved = localStorage.getItem("coginzo-theme");
+  var theme = saved || (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
+<title>Refund & Cancellation Policy | Coginzo</title>
+<meta name="description" content="Coginzo's policy on project cancellations, refunds, and how advances and milestone payments are handled.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://coginzo.com/refund-policy.html">
+<meta property="og:title" content="Refund & Cancellation Policy | Coginzo">
+<meta property="og:description" content="How Coginzo handles project cancellations, refunds, and milestone payments.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://coginzo.com/refund-policy.html">
+<meta property="og:image" content="https://coginzo.com/assets/logo/logo-icon-square.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Refund &amp; Cancellation Policy | Coginzo">
+<meta name="twitter:description" content="How Coginzo handles project cancellations, refunds, and milestone payments.">
+<meta name="twitter:image" content="https://coginzo.com/assets/logo/logo-icon-square.png">
+<link rel="icon" type="image/png" href="assets/logo/logo-icon-square.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://coginzo.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Refund & Cancellation Policy", "item": "https://coginzo.com/refund-policy.html" }
+  ]
+}
+</script>
+</head>
+<body>
+
+<div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<div class="loader" id="loader" aria-hidden="true">
+  <svg class="loader-mark" viewBox="0 0 60 60" fill="none">
+    <circle cx="30" cy="30" r="26" stroke="url(#loaderGrad)" stroke-width="3" stroke-linecap="round" stroke-dasharray="140 200"/>
+    <defs>
+      <linearGradient id="loaderGrad" x1="0" y1="0" x2="60" y2="60">
+        <stop offset="0%" stop-color="#6ED45A"/>
+        <stop offset="55%" stop-color="#59C749"/>
+        <stop offset="100%" stop-color="#3FA636"/>
+      </linearGradient>
+    </defs>
+  </svg>
+</div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="siteNav">
+  <div class="nav-inner">
+    <a href="index.html#top" class="brand" aria-label="Coginzo home">
+      <img src="assets/logo/logo-icon-square.png" alt="Coginzo" class="brand-mark">
+      <span class="brand-word">coginzo</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html#about">About</a>
+      <a href="service.html#services">Services</a>
+      <a href="service.html#pricing">Pricing</a>
+      <a href="index.html#why">Why Us</a>
+      <a href="index.html#founders">Founders</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="index.html#contact" class="nav-cta">Contact Us</a>
+    </nav>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ PAGE HERO ============ -->
+<section class="page-hero container" id="top">
+  <span class="eyebrow">Legal</span>
+  <h1>Refund &amp; <span class="grad-text">Cancellation</span> Policy</h1>
+  <p>How advances, milestones, and cancellations are handled on Coginzo projects.</p>
+  <span class="legal-updated">Last updated: 12 August 2026</span>
+</section>
+
+<!-- ============ CONTENT ============ -->
+<section class="section" style="padding-top:40px;">
+  <div class="container">
+    <div class="legal-layout">
+
+      <aside class="legal-toc" data-reveal>
+        <span>On this page</span>
+        <a href="#overview-refund">Overview</a>
+        <a href="#advance">Advance Payments</a>
+        <a href="#milestones">Milestone Payments</a>
+        <a href="#client-cancel">Cancellation by Client</a>
+        <a href="#coginzo-cancel">Cancellation by Coginzo</a>
+        <a href="#non-refundable">Non-Refundable Items</a>
+        <a href="#revisions">Revisions vs. Refunds</a>
+        <a href="#how-to-request">How to Request a Refund</a>
+        <a href="#changes-refund">Changes to This Policy</a>
+        <a href="#contact-refund">Contact Us</a>
+      </aside>
+
+      <article class="legal-content">
+
+        <p class="legal-intro" id="overview-refund">Coginzo delivers custom, project-based development work rather than off-the-shelf products, so refunds are handled differently than in typical e-commerce. This policy explains how advances, milestones, cancellations, and refunds work across our engagements. Specific terms in your written quote or proposal take precedence where they differ from this general policy.</p>
+
+        <div class="glass-card" id="advance" data-reveal>
+          <h2><span class="legal-num">01</span> Advance Payments</h2>
+          <p>Projects begin after an upfront advance is received, which secures your project slot and covers initial planning, design, and setup work. Once work has started, the advance is <strong>non-refundable</strong>, as it reflects time and resources already committed to your project.</p>
+        </div>
+
+        <div class="glass-card" id="milestones" data-reveal>
+          <h2><span class="legal-num">02</span> Milestone Payments</h2>
+          <p>For larger projects, payment is typically split across milestones (e.g., design approval, development completion, final delivery). Each milestone payment covers the work completed up to that stage and is non-refundable once the corresponding deliverable has been shared with and reviewed by the client.</p>
+        </div>
+
+        <div class="glass-card" id="client-cancel" data-reveal>
+          <h2><span class="legal-num">03</span> Cancellation by Client</h2>
+          <p>If you need to cancel a project after work has begun:</p>
+          <ul>
+            <li>You will be invoiced for all work completed up to the cancellation date, calculated against the agreed project value.</li>
+            <li>Any amount paid beyond the value of completed work will be refunded within 14 business days.</li>
+            <li>Any amount owed for completed-but-unpaid work must be settled before final files or source code are handed over.</li>
+          </ul>
+        </div>
+
+        <div class="glass-card" id="coginzo-cancel" data-reveal>
+          <h2><span class="legal-num">04</span> Cancellation by Coginzo</h2>
+          <p>In the rare case that we are unable to deliver an agreed project — due to scope that turns out to be infeasible, prolonged non-responsiveness making delivery impossible, or other exceptional circumstances — we will refund any payments made for work not yet completed, in full.</p>
+        </div>
+
+        <div class="glass-card" id="non-refundable" data-reveal>
+          <h2><span class="legal-num">05</span> Non-Refundable Items</h2>
+          <ul>
+            <li>Third-party costs already incurred on your behalf — domain registration, paid hosting, plugin/theme licenses, API credits, or similar purchases — are non-refundable once purchased.</li>
+            <li>Completed and delivered milestones, once approved by the client.</li>
+            <li>Custom design, development, or consulting hours already performed, even if the final project is later cancelled.</li>
+          </ul>
+        </div>
+
+        <div class="glass-card" id="revisions" data-reveal>
+          <h2><span class="legal-num">06</span> Revisions vs. Refunds</h2>
+          <p>If a deliverable doesn't match the agreed scope or specification, we will fix it at no extra cost within the revision window stated in your quote — this is our default path to resolution rather than a refund. Requests that fall outside the original scope are treated as new work and quoted separately.</p>
+        </div>
+
+        <div class="glass-card" id="how-to-request" data-reveal>
+          <h2><span class="legal-num">07</span> How to Request a Refund</h2>
+          <p>Email us at <a href="mailto:infocoginzo@gmail.com">infocoginzo@gmail.com</a> with your project name, invoice/payment reference, and the reason for your request. We aim to acknowledge refund requests within 2 business days and resolve them within 14 business days of approval.</p>
+        </div>
+
+        <div class="glass-card" id="changes-refund" data-reveal>
+          <h2><span class="legal-num">08</span> Changes to This Policy</h2>
+          <p>We may update this policy from time to time; the "Last updated" date above reflects the current version. Terms agreed in an active project's written quote remain valid for that project even if this general policy is later updated.</p>
+        </div>
+
+        <div class="glass-card" id="contact-refund" data-reveal>
+          <h2><span class="legal-num">09</span> Contact Us</h2>
+          <p>Questions about payments, cancellations, or refunds:</p>
+          <ul>
+            <li>Email: <a href="mailto:infocoginzo@gmail.com">infocoginzo@gmail.com</a></li>
+            <li>Location: Kerala, India</li>
+          </ul>
+        </div>
+
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="index.html#top" class="brand">
+        <img src="assets/logo/logo-horizontal.png" alt="Coginzo — Code. Design. Deliver." class="footer-logo">
+      </a>
+      <p>Building digital products that drive business growth.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Services</h4>
+      <a href="service.html#services">Website Development</a>
+      <a href="service.html#services">Mobile App Development</a>
+      <a href="service.html#services">AI Solutions</a>
+      <a href="service.html#services">Cloud Deployment</a>
+      <a href="service.html#pricing">Pricing</a>
+    </div>
+
+    <div class="footer-links">
+      <h4>Company</h4>
+      <a href="index.html#about">About</a>
+      <a href="index.html#founders">Founders</a>
+      <a href="index.html#team">Team</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+
+    <div class="footer-links">
+      <h4>Legal</h4>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms-of-service.html">Terms of Service</a>
+      <a href="cookie-policy.html">Cookie Policy</a>
+      <a href="refund-policy.html">Refund &amp; Cancellation</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>© 2026 Coginzo. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>

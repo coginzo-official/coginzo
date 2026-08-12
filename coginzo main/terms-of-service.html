@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+(function(){
+  var saved = localStorage.getItem("coginzo-theme");
+  var theme = saved || (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
+<title>Terms of Service | Coginzo</title>
+<meta name="description" content="The terms and conditions that govern use of the Coginzo website and engagement of Coginzo's web and mobile app development services.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://coginzo.com/terms-of-service.html">
+<meta property="og:title" content="Terms of Service | Coginzo">
+<meta property="og:description" content="The terms and conditions that govern use of the Coginzo website and services.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://coginzo.com/terms-of-service.html">
+<meta property="og:image" content="https://coginzo.com/assets/logo/logo-icon-square.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Terms of Service | Coginzo">
+<meta name="twitter:description" content="The terms and conditions that govern use of the Coginzo website and services.">
+<meta name="twitter:image" content="https://coginzo.com/assets/logo/logo-icon-square.png">
+<link rel="icon" type="image/png" href="assets/logo/logo-icon-square.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://coginzo.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Terms of Service", "item": "https://coginzo.com/terms-of-service.html" }
+  ]
+}
+</script>
+</head>
+<body>
+
+<div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<div class="loader" id="loader" aria-hidden="true">
+  <svg class="loader-mark" viewBox="0 0 60 60" fill="none">
+    <circle cx="30" cy="30" r="26" stroke="url(#loaderGrad)" stroke-width="3" stroke-linecap="round" stroke-dasharray="140 200"/>
+    <defs>
+      <linearGradient id="loaderGrad" x1="0" y1="0" x2="60" y2="60">
+        <stop offset="0%" stop-color="#6ED45A"/>
+        <stop offset="55%" stop-color="#59C749"/>
+        <stop offset="100%" stop-color="#3FA636"/>
+      </linearGradient>
+    </defs>
+  </svg>
+</div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="siteNav">
+  <div class="nav-inner">
+    <a href="index.html#top" class="brand" aria-label="Coginzo home">
+      <img src="assets/logo/logo-icon-square.png" alt="Coginzo" class="brand-mark">
+      <span class="brand-word">coginzo</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html#about">About</a>
+      <a href="service.html#services">Services</a>
+      <a href="service.html#pricing">Pricing</a>
+      <a href="index.html#why">Why Us</a>
+      <a href="index.html#founders">Founders</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="index.html#contact" class="nav-cta">Contact Us</a>
+    </nav>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ PAGE HERO ============ -->
+<section class="page-hero container" id="top">
+  <span class="eyebrow">Legal</span>
+  <h1>Terms of <span class="grad-text">Service</span></h1>
+  <p>The terms that apply when you use our website or engage us for a project.</p>
+  <span class="legal-updated">Last updated: 12 August 2026</span>
+</section>
+
+<!-- ============ CONTENT ============ -->
+<section class="section" style="padding-top:40px;">
+  <div class="container">
+    <div class="legal-layout">
+
+      <aside class="legal-toc" data-reveal>
+        <span>On this page</span>
+        <a href="#acceptance">Acceptance of Terms</a>
+        <a href="#services">Our Services</a>
+        <a href="#engagement">Project Engagement</a>
+        <a href="#payment">Payment Terms</a>
+        <a href="#ip">Intellectual Property</a>
+        <a href="#client-content">Client Content &amp; Access</a>
+        <a href="#warranties">Warranties &amp; Disclaimers</a>
+        <a href="#liability">Limitation of Liability</a>
+        <a href="#termination">Termination</a>
+        <a href="#governing-law">Governing Law</a>
+        <a href="#changes-tos">Changes to These Terms</a>
+        <a href="#contact-tos">Contact Us</a>
+      </aside>
+
+      <article class="legal-content">
+
+        <p class="legal-intro" id="acceptance">These Terms of Service ("Terms") govern your use of <strong>coginzo.com</strong> and any project, quote, or service engagement with Coginzo ("we", "us", "our"). By browsing our website, submitting an enquiry, or accepting a quote, you agree to be bound by these Terms. If you do not agree, please do not use our website or services.</p>
+
+        <div class="glass-card" id="services" data-reveal>
+          <h2><span class="legal-num">01</span> Our Services</h2>
+          <p>Coginzo is a freelance web and mobile app development agency offering website development, web and mobile application development, UI/UX design, e-commerce builds, cloud deployment, API integration, AI solutions, and related IT consulting. Specific deliverables, timelines, and pricing for any project are agreed separately in a quote, proposal, or written agreement, which forms part of these Terms for that engagement.</p>
+        </div>
+
+        <div class="glass-card" id="engagement" data-reveal>
+          <h2><span class="legal-num">02</span> Project Engagement</h2>
+          <ul>
+            <li>Projects begin only after scope, pricing, and timeline are confirmed in writing (email or signed proposal).</li>
+            <li>Delivery timelines are estimates based on the agreed scope; delays caused by late feedback, missing content, or scope changes from the client's side may extend the timeline accordingly.</li>
+            <li>Any work outside the originally agreed scope will be quoted separately before we proceed.</li>
+            <li>The client is responsible for providing timely feedback, content, and access needed to complete the project.</li>
+          </ul>
+        </div>
+
+        <div class="glass-card" id="payment" data-reveal>
+          <h2><span class="legal-num">03</span> Payment Terms</h2>
+          <ul>
+            <li>Projects typically require an upfront advance before work begins, with the balance due on agreed milestones or upon completion, as specified in your quote.</li>
+            <li>All prices are in INR unless otherwise stated and exclude applicable taxes unless mentioned.</li>
+            <li>Work may be paused if payments are not received according to the agreed schedule.</li>
+            <li>Ongoing costs such as domain registration, hosting, and third-party subscriptions are billed separately and are the client's responsibility to renew, unless a maintenance plan is in place.</li>
+          </ul>
+          <p>For refunds and cancellations, see our <a href="refund-policy.html">Refund &amp; Cancellation Policy</a>.</p>
+        </div>
+
+        <div class="glass-card" id="ip" data-reveal>
+          <h2><span class="legal-num">04</span> Intellectual Property</h2>
+          <p>Upon full and final payment, ownership of the final, agreed deliverables (source code and design assets created specifically for the project) transfers to the client, excluding any pre-existing tools, frameworks, libraries, or reusable components owned by Coginzo or licensed from third parties, which remain the property of their respective owners and are licensed for use within the delivered project. Coginzo retains the right to showcase completed work in its portfolio, unless the client requests confidentiality in writing.</p>
+        </div>
+
+        <div class="glass-card" id="client-content" data-reveal>
+          <h2><span class="legal-num">05</span> Client Content &amp; Access</h2>
+          <p>You are responsible for ensuring that any content, images, trademarks, or data you provide for use in your project do not infringe on the rights of third parties. You grant Coginzo permission to use this content solely to complete the agreed work. Where a project requires access to your accounts (hosting, domains, APIs, payment gateways), you agree to provide credentials securely and revoke access once no longer needed.</p>
+        </div>
+
+        <div class="glass-card" id="warranties" data-reveal>
+          <h2><span class="legal-num">06</span> Warranties &amp; Disclaimers</h2>
+          <p>We aim to deliver high-quality, functional software, and we offer a bug-fix window after delivery as specified in your project quote. Beyond that window, our services are provided "as is." We do not guarantee uninterrupted, error-free operation of any software, particularly where third-party services, hosting providers, or client-side changes are involved.</p>
+        </div>
+
+        <div class="glass-card" id="liability" data-reveal>
+          <h2><span class="legal-num">07</span> Limitation of Liability</h2>
+          <p>To the fullest extent permitted by law, Coginzo's total liability arising from any project or use of our website is limited to the amount paid by the client for that specific engagement. We are not liable for indirect, incidental, or consequential damages, including loss of revenue or data, arising from the use of delivered software or our website.</p>
+        </div>
+
+        <div class="glass-card" id="termination" data-reveal>
+          <h2><span class="legal-num">08</span> Termination</h2>
+          <p>Either party may terminate an ongoing project engagement with written notice. In the event of termination, the client is responsible for payment covering work completed up to the termination date, and Coginzo will deliver all completed work product corresponding to payments received.</p>
+        </div>
+
+        <div class="glass-card" id="governing-law" data-reveal>
+          <h2><span class="legal-num">09</span> Governing Law</h2>
+          <p>These Terms are governed by the laws of India. Any disputes arising out of or relating to these Terms or a project engagement will be subject to the exclusive jurisdiction of the courts of Kerala, India.</p>
+        </div>
+
+        <div class="glass-card" id="changes-tos" data-reveal>
+          <h2><span class="legal-num">10</span> Changes to These Terms</h2>
+          <p>We may revise these Terms from time to time. The "Last updated" date above reflects the most recent version. Continued use of our website or an active project engagement after changes take effect constitutes acceptance of the revised Terms.</p>
+        </div>
+
+        <div class="glass-card" id="contact-tos" data-reveal>
+          <h2><span class="legal-num">11</span> Contact Us</h2>
+          <p>Questions about these Terms can be sent to:</p>
+          <ul>
+            <li>Email: <a href="mailto:infocoginzo@gmail.com">infocoginzo@gmail.com</a></li>
+            <li>Location: Kerala, India</li>
+          </ul>
+        </div>
+
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="index.html#top" class="brand">
+        <img src="assets/logo/logo-horizontal.png" alt="Coginzo — Code. Design. Deliver." class="footer-logo">
+      </a>
+      <p>Building digital products that drive business growth.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Services</h4>
+      <a href="service.html#services">Website Development</a>
+      <a href="service.html#services">Mobile App Development</a>
+      <a href="service.html#services">AI Solutions</a>
+      <a href="service.html#services">Cloud Deployment</a>
+      <a href="service.html#pricing">Pricing</a>
+    </div>
+
+    <div class="footer-links">
+      <h4>Company</h4>
+      <a href="index.html#about">About</a>
+      <a href="index.html#founders">Founders</a>
+      <a href="index.html#team">Team</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+
+    <div class="footer-links">
+      <h4>Legal</h4>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms-of-service.html">Terms of Service</a>
+      <a href="cookie-policy.html">Cookie Policy</a>
+      <a href="refund-policy.html">Refund &amp; Cancellation</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>© 2026 Coginzo. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>

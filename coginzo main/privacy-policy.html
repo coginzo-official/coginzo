@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+(function(){
+  var saved = localStorage.getItem("coginzo-theme");
+  var theme = saved || (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
+<title>Privacy Policy | Coginzo</title>
+<meta name="description" content="Read Coginzo's Privacy Policy to understand what information we collect, how we use it, and the choices you have as a visitor or client.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://coginzo.com/privacy-policy.html">
+<meta property="og:title" content="Privacy Policy | Coginzo">
+<meta property="og:description" content="What information Coginzo collects, how it's used, and the choices you have.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://coginzo.com/privacy-policy.html">
+<meta property="og:image" content="https://coginzo.com/assets/logo/logo-icon-square.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Privacy Policy | Coginzo">
+<meta name="twitter:description" content="What information Coginzo collects, how it's used, and the choices you have.">
+<meta name="twitter:image" content="https://coginzo.com/assets/logo/logo-icon-square.png">
+<link rel="icon" type="image/png" href="assets/logo/logo-icon-square.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://coginzo.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Privacy Policy", "item": "https://coginzo.com/privacy-policy.html" }
+  ]
+}
+</script>
+</head>
+<body>
+
+<div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<div class="loader" id="loader" aria-hidden="true">
+  <svg class="loader-mark" viewBox="0 0 60 60" fill="none">
+    <circle cx="30" cy="30" r="26" stroke="url(#loaderGrad)" stroke-width="3" stroke-linecap="round" stroke-dasharray="140 200"/>
+    <defs>
+      <linearGradient id="loaderGrad" x1="0" y1="0" x2="60" y2="60">
+        <stop offset="0%" stop-color="#6ED45A"/>
+        <stop offset="55%" stop-color="#59C749"/>
+        <stop offset="100%" stop-color="#3FA636"/>
+      </linearGradient>
+    </defs>
+  </svg>
+</div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="siteNav">
+  <div class="nav-inner">
+    <a href="index.html#top" class="brand" aria-label="Coginzo home">
+      <img src="assets/logo/logo-icon-square.png" alt="Coginzo" class="brand-mark">
+      <span class="brand-word">coginzo</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html#about">About</a>
+      <a href="service.html#services">Services</a>
+      <a href="service.html#pricing">Pricing</a>
+      <a href="index.html#why">Why Us</a>
+      <a href="index.html#founders">Founders</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="index.html#contact" class="nav-cta">Contact Us</a>
+    </nav>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ PAGE HERO ============ -->
+<section class="page-hero container" id="top">
+  <span class="eyebrow">Legal</span>
+  <h1>Privacy <span class="grad-text">Policy</span></h1>
+  <p>How Coginzo collects, uses, and protects your information.</p>
+  <span class="legal-updated">Last updated: 12 August 2026</span>
+</section>
+
+<!-- ============ CONTENT ============ -->
+<section class="section" style="padding-top:40px;">
+  <div class="container">
+    <div class="legal-layout">
+
+      <aside class="legal-toc" data-reveal>
+        <span>On this page</span>
+        <a href="#overview">Overview</a>
+        <a href="#info-we-collect">Information We Collect</a>
+        <a href="#how-we-use">How We Use It</a>
+        <a href="#sharing">Sharing &amp; Third Parties</a>
+        <a href="#cookies-storage">Cookies &amp; Storage</a>
+        <a href="#security">Data Security</a>
+        <a href="#retention">Data Retention</a>
+        <a href="#your-rights">Your Rights</a>
+        <a href="#children">Children's Privacy</a>
+        <a href="#changes">Changes to This Policy</a>
+        <a href="#contact-us">Contact Us</a>
+      </aside>
+
+      <article class="legal-content">
+
+        <p class="legal-intro" id="overview">Coginzo ("Coginzo", "we", "us", or "our") is a web and mobile app development agency based in Kerala, India. This Privacy Policy explains what information we collect through <strong>coginzo.com</strong> and in the course of client engagements, why we collect it, and the choices available to you. By using our website or engaging our services, you agree to the practices described here.</p>
+
+        <div class="glass-card" id="info-we-collect" data-reveal>
+          <h2><span class="legal-num">01</span> Information We Collect</h2>
+          <p>We collect information in a few different ways:</p>
+          <ul>
+            <li><strong>Information you provide directly</strong> — such as your name, email address, phone number, company name, and project details when you fill out our contact form, email us, or message us on social media.</li>
+            <li><strong>Project and business information</strong> — content, assets, credentials, or requirements you share with us during a paid engagement, solely to deliver the agreed work.</li>
+            <li><strong>Automatically collected information</strong> — basic technical data such as browser type, device type, approximate location (derived from IP address), and pages visited, gathered through standard web server logs.</li>
+            <li><strong>Local storage preferences</strong> — non-tracking data such as your light/dark theme preference, stored in your browser only.</li>
+          </ul>
+        </div>
+
+        <div class="glass-card" id="how-we-use" data-reveal>
+          <h2><span class="legal-num">02</span> How We Use It</h2>
+          <p>We use the information we collect to:</p>
+          <ul>
+            <li>Respond to enquiries and prepare project quotes</li>
+            <li>Deliver, support, and maintain the software and websites we build for you</li>
+            <li>Send project updates, invoices, and service-related communication</li>
+            <li>Improve our website, services, and internal processes</li>
+            <li>Meet legal, accounting, and tax obligations in India</li>
+          </ul>
+          <p>We do not sell your personal information, and we do not use it for unrelated advertising.</p>
+        </div>
+
+        <div class="glass-card" id="sharing" data-reveal>
+          <h2><span class="legal-num">03</span> Sharing &amp; Third Parties</h2>
+          <p>We only share information where necessary to run our business or deliver your project:</p>
+          <ul>
+            <li><strong>Service providers</strong> we rely on to operate the website and contact form, such as our email delivery provider (EmailJS) and hosting/CDN providers.</li>
+            <li><strong>Third-party integrations</strong> a project may require (payment gateways, cloud platforms, APIs) that you explicitly ask us to connect to your product — these are governed by that provider's own privacy policy.</li>
+            <li><strong>Legal requirements</strong> — where disclosure is required to comply with Indian law, a court order, or to protect our legal rights.</li>
+          </ul>
+          <p>We do not sell, rent, or trade your personal data to third parties for their marketing purposes.</p>
+        </div>
+
+        <div class="glass-card" id="cookies-storage" data-reveal>
+          <h2><span class="legal-num">04</span> Cookies &amp; Storage</h2>
+          <p>coginzo.com does not use advertising or tracking cookies. We use minimal, functional storage only:</p>
+          <ul>
+            <li><strong>Local storage</strong> to remember your light/dark theme preference on this device.</li>
+            <li><strong>Third-party embeds</strong> — Google Fonts, Font Awesome, and EmailJS — which may load resources from their own servers and are subject to their respective privacy practices.</li>
+          </ul>
+          <p>See our <a href="cookie-policy.html">Cookie Policy</a> for full details.</p>
+        </div>
+
+        <div class="glass-card" id="security" data-reveal>
+          <h2><span class="legal-num">05</span> Data Security</h2>
+          <p>We take reasonable technical and organisational measures — including secure hosting, restricted access to client credentials, and encrypted connections (HTTPS) — to protect the information you share with us. However, no method of transmission or storage is 100% secure, and we cannot guarantee absolute security.</p>
+        </div>
+
+        <div class="glass-card" id="retention" data-reveal>
+          <h2><span class="legal-num">06</span> Data Retention</h2>
+          <p>We retain enquiry and project information for as long as needed to deliver services, maintain business records, and meet legal or tax obligations. Client project data (code, assets, credentials) is retained only for the duration required for delivery and agreed support, after which it can be deleted on request.</p>
+        </div>
+
+        <div class="glass-card" id="your-rights" data-reveal>
+          <h2><span class="legal-num">07</span> Your Rights</h2>
+          <p>You can ask us to:</p>
+          <ul>
+            <li>Confirm what personal information we hold about you</li>
+            <li>Correct inaccurate information</li>
+            <li>Delete your information, where we are not legally required to keep it</li>
+            <li>Withdraw consent for optional communications, such as marketing emails</li>
+          </ul>
+          <p>To exercise any of these rights, contact us using the details below.</p>
+        </div>
+
+        <div class="glass-card" id="children" data-reveal>
+          <h2><span class="legal-num">08</span> Children's Privacy</h2>
+          <p>Our website and services are intended for businesses and individuals over the age of 18. We do not knowingly collect personal information from children.</p>
+        </div>
+
+        <div class="glass-card" id="changes" data-reveal>
+          <h2><span class="legal-num">09</span> Changes to This Policy</h2>
+          <p>We may update this Privacy Policy from time to time to reflect changes in our practices or for legal reasons. The "Last updated" date at the top of this page will always reflect the most recent revision. Continued use of our website after changes take effect constitutes acceptance of the updated policy.</p>
+        </div>
+
+        <div class="glass-card" id="contact-us" data-reveal>
+          <h2><span class="legal-num">10</span> Contact Us</h2>
+          <p>If you have questions about this Privacy Policy or how we handle your data, reach out to us:</p>
+          <ul>
+            <li>Email: <a href="mailto:infocoginzo@gmail.com">infocoginzo@gmail.com</a></li>
+            <li>Location: Kerala, India</li>
+          </ul>
+        </div>
+
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="index.html#top" class="brand">
+        <img src="assets/logo/logo-horizontal.png" alt="Coginzo — Code. Design. Deliver." class="footer-logo">
+      </a>
+      <p>Building digital products that drive business growth.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Services</h4>
+      <a href="service.html#services">Website Development</a>
+      <a href="service.html#services">Mobile App Development</a>
+      <a href="service.html#services">AI Solutions</a>
+      <a href="service.html#services">Cloud Deployment</a>
+      <a href="service.html#pricing">Pricing</a>
+    </div>
+
+    <div class="footer-links">
+      <h4>Company</h4>
+      <a href="index.html#about">About</a>
+      <a href="index.html#founders">Founders</a>
+      <a href="index.html#team">Team</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+
+    <div class="footer-links">
+      <h4>Legal</h4>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms-of-service.html">Terms of Service</a>
+      <a href="cookie-policy.html">Cookie Policy</a>
+      <a href="refund-policy.html">Refund &amp; Cancellation</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>© 2026 Coginzo. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>

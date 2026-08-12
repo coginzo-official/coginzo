@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+(function(){
+  var saved = localStorage.getItem("coginzo-theme");
+  var theme = saved || (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
+<title>Cookie Policy | Coginzo</title>
+<meta name="description" content="Learn what cookies and local storage Coginzo's website uses, why, and how to control them.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://coginzo.com/cookie-policy.html">
+<meta property="og:title" content="Cookie Policy | Coginzo">
+<meta property="og:description" content="What cookies and local storage Coginzo's website uses, and how to control them.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://coginzo.com/cookie-policy.html">
+<meta property="og:image" content="https://coginzo.com/assets/logo/logo-icon-square.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cookie Policy | Coginzo">
+<meta name="twitter:description" content="What cookies and local storage Coginzo's website uses, and how to control them.">
+<meta name="twitter:image" content="https://coginzo.com/assets/logo/logo-icon-square.png">
+<link rel="icon" type="image/png" href="assets/logo/logo-icon-square.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://coginzo.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Cookie Policy", "item": "https://coginzo.com/cookie-policy.html" }
+  ]
+}
+</script>
+</head>
+<body>
+
+<div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<div class="loader" id="loader" aria-hidden="true">
+  <svg class="loader-mark" viewBox="0 0 60 60" fill="none">
+    <circle cx="30" cy="30" r="26" stroke="url(#loaderGrad)" stroke-width="3" stroke-linecap="round" stroke-dasharray="140 200"/>
+    <defs>
+      <linearGradient id="loaderGrad" x1="0" y1="0" x2="60" y2="60">
+        <stop offset="0%" stop-color="#6ED45A"/>
+        <stop offset="55%" stop-color="#59C749"/>
+        <stop offset="100%" stop-color="#3FA636"/>
+      </linearGradient>
+    </defs>
+  </svg>
+</div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="siteNav">
+  <div class="nav-inner">
+    <a href="index.html#top" class="brand" aria-label="Coginzo home">
+      <img src="assets/logo/logo-icon-square.png" alt="Coginzo" class="brand-mark">
+      <span class="brand-word">coginzo</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html#about">About</a>
+      <a href="service.html#services">Services</a>
+      <a href="service.html#pricing">Pricing</a>
+      <a href="index.html#why">Why Us</a>
+      <a href="index.html#founders">Founders</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="index.html#contact" class="nav-cta">Contact Us</a>
+    </nav>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ PAGE HERO ============ -->
+<section class="page-hero container" id="top">
+  <span class="eyebrow">Legal</span>
+  <h1>Cookie <span class="grad-text">Policy</span></h1>
+  <p>What we store in your browser, and why it's kept to a minimum.</p>
+  <span class="legal-updated">Last updated: 12 August 2026</span>
+</section>
+
+<!-- ============ CONTENT ============ -->
+<section class="section" style="padding-top:40px;">
+  <div class="container">
+    <div class="legal-layout">
+
+      <aside class="legal-toc" data-reveal>
+        <span>On this page</span>
+        <a href="#what-are-cookies">What Are Cookies</a>
+        <a href="#what-we-use">What We Use</a>
+        <a href="#third-party">Third-Party Resources</a>
+        <a href="#no-ad-tracking">No Ad Tracking</a>
+        <a href="#manage">Managing Storage &amp; Cookies</a>
+        <a href="#changes-cookie">Changes to This Policy</a>
+        <a href="#contact-cookie">Contact Us</a>
+      </aside>
+
+      <article class="legal-content">
+
+        <p class="legal-intro" id="what-are-cookies">Cookies are small text files placed on your device by websites you visit, typically used to remember preferences or track activity. Coginzo's website is intentionally lightweight — this policy explains exactly what we store locally in your browser and what, if anything, third-party resources on our site might set.</p>
+
+        <div class="glass-card" id="what-we-use" data-reveal>
+          <h2><span class="legal-num">01</span> What We Use</h2>
+          <p><strong>coginzo.com does not set any first-party tracking or advertising cookies.</strong> The only data we store in your browser is:</p>
+          <ul>
+            <li><strong>Theme preference (local storage)</strong> — remembers whether you last viewed the site in light or dark mode. This stays on your device and is never sent to our servers.</li>
+          </ul>
+        </div>
+
+        <div class="glass-card" id="third-party" data-reveal>
+          <h2><span class="legal-num">02</span> Third-Party Resources</h2>
+          <p>Our pages load a small number of resources from third-party providers to render fonts, icons, and our contact form. These providers may set their own cookies or collect limited technical data (such as IP address) under their own privacy policies:</p>
+          <ul>
+            <li><strong>Google Fonts</strong> — used to load the Space Grotesk, Inter, and JetBrains Mono typefaces.</li>
+            <li><strong>Font Awesome (cdnjs)</strong> — used to load icon assets.</li>
+            <li><strong>EmailJS</strong> — used to send messages submitted through our contact form directly to our inbox, without storing them on a server we control.</li>
+          </ul>
+          <p>We do not control these third parties' cookie practices; please refer to their respective policies for details.</p>
+        </div>
+
+        <div class="glass-card" id="no-ad-tracking" data-reveal>
+          <h2><span class="legal-num">03</span> No Ad Tracking</h2>
+          <p>We do not run advertising pixels, retargeting scripts, or cross-site tracking cookies on coginzo.com, and we do not sell browsing data to advertisers.</p>
+        </div>
+
+        <div class="glass-card" id="manage" data-reveal>
+          <h2><span class="legal-num">04</span> Managing Storage &amp; Cookies</h2>
+          <p>You can clear your theme preference at any time by clearing your browser's local storage or site data for coginzo.com. Most browsers also let you block or delete cookies from third-party domains through their privacy or site-settings menu; doing so will not affect your ability to browse our site, though embedded fonts, icons, or the contact form may be affected.</p>
+        </div>
+
+        <div class="glass-card" id="changes-cookie" data-reveal>
+          <h2><span class="legal-num">05</span> Changes to This Policy</h2>
+          <p>If we introduce analytics or additional third-party tools in the future, we will update this page and, where required, request your consent before doing so. The "Last updated" date above always reflects the current version.</p>
+        </div>
+
+        <div class="glass-card" id="contact-cookie" data-reveal>
+          <h2><span class="legal-num">06</span> Contact Us</h2>
+          <p>Questions about this Cookie Policy can be sent to:</p>
+          <ul>
+            <li>Email: <a href="mailto:infocoginzo@gmail.com">infocoginzo@gmail.com</a></li>
+          </ul>
+        </div>
+
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="index.html#top" class="brand">
+        <img src="assets/logo/logo-horizontal.png" alt="Coginzo — Code. Design. Deliver." class="footer-logo">
+      </a>
+      <p>Building digital products that drive business growth.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Services</h4>
+      <a href="service.html#services">Website Development</a>
+      <a href="service.html#services">Mobile App Development</a>
+      <a href="service.html#services">AI Solutions</a>
+      <a href="service.html#services">Cloud Deployment</a>
+      <a href="service.html#pricing">Pricing</a>
+    </div>
+
+    <div class="footer-links">
+      <h4>Company</h4>
+      <a href="index.html#about">About</a>
+      <a href="index.html#founders">Founders</a>
+      <a href="index.html#team">Team</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+
+    <div class="footer-links">
+      <h4>Legal</h4>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms-of-service.html">Terms of Service</a>
+      <a href="cookie-policy.html">Cookie Policy</a>
+      <a href="refund-policy.html">Refund &amp; Cancellation</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>© 2026 Coginzo. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>

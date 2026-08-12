@@ -3,20 +3,27 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Services & Pricing | Coginzo — Web & Mobile App Development Agency</title>
-<meta name="description" content="Explore Coginzo's web development, mobile app development, UI/UX design, e-commerce, cloud deployment, and AI services — with transparent, upfront pricing.">
-<meta name="keywords" content="Coginzo services, web development pricing, mobile app development cost, UI/UX design agency, e-commerce website pricing, cloud deployment services, AI solutions pricing Kerala">
+<script>
+(function(){
+  var saved = localStorage.getItem("coginzo-theme");
+  var theme = saved || (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
+<title>Services &amp; Pricing | Coginzo — IT Solutions Company in India</title>
+<meta name="description" content="Explore Coginzo's IT services — website development, mobile app development, UI/UX design, e-commerce, cloud deployment, and AI solutions — with transparent, upfront pricing.">
+<meta name="keywords" content="Coginzo services, IT solutions company, IT services company, web development pricing, mobile app development cost, UI/UX design agency, e-commerce website pricing, cloud deployment services, AI solutions pricing Kerala">
 <meta name="author" content="Coginzo">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://coginzo.com/service.html">
-<meta property="og:title" content="Services & Pricing | Coginzo">
-<meta property="og:description" content="Web development, mobile apps, UI/UX design, e-commerce, cloud deployment, and AI services — with transparent, upfront pricing.">
+<meta property="og:title" content="Services &amp; Pricing | Coginzo — IT Solutions Company in India">
+<meta property="og:description" content="Web development, mobile apps, UI/UX design, e-commerce, cloud deployment, and AI services from an IT solutions company in India — with transparent, upfront pricing.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://coginzo.com/service.html">
 <meta property="og:image" content="https://coginzo.com/assets/logo/logo-icon-square.png">
 <meta property="og:locale" content="en_IN">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Services & Pricing | Coginzo">
+<meta name="twitter:title" content="Services &amp; Pricing | Coginzo — IT Solutions Company in India">
 <meta name="twitter:description" content="Web development, mobile apps, UI/UX design, e-commerce, cloud deployment, and AI services — with transparent, upfront pricing.">
 <meta name="twitter:image" content="https://coginzo.com/assets/logo/logo-icon-square.png">
 <meta name="geo.region" content="IN-KL">
@@ -30,7 +37,7 @@
 {
   "@context": "https://schema.org",
   "@type": "Service",
-  "name": "Coginzo Web & Mobile App Development Services",
+  "name": "Coginzo IT Services — Web & Mobile App Development",
   "provider": { "@type": "Organization", "name": "Coginzo", "url": "https://coginzo.com/" },
   "areaServed": { "@type": "Country", "name": "India" },
   "hasOfferCatalog": {
@@ -47,6 +54,16 @@
   }
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://coginzo.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Services & Pricing", "item": "https://coginzo.com/service.html" }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -58,9 +75,9 @@
     <circle cx="30" cy="30" r="26" stroke="url(#loaderGrad)" stroke-width="3" stroke-linecap="round" stroke-dasharray="140 200"/>
     <defs>
       <linearGradient id="loaderGrad" x1="0" y1="0" x2="60" y2="60">
-        <stop offset="0%" stop-color="#7CFF4E"/>
-        <stop offset="55%" stop-color="#2ED573"/>
-        <stop offset="100%" stop-color="#00D4FF"/>
+        <stop offset="0%" stop-color="#6ED45A"/>
+        <stop offset="55%" stop-color="#59C749"/>
+        <stop offset="100%" stop-color="#3FA636"/>
       </linearGradient>
     </defs>
   </svg>
@@ -70,7 +87,7 @@
 <header class="nav" id="siteNav">
   <div class="nav-inner">
     <a href="index.html#top" class="brand" aria-label="Coginzo home">
-      <img src="assets/logo/logo-icon-square.png" alt="Coginzo" class="brand-mark">
+      <img src="assets/logo/logo-icon-square.png" alt="Coginzo" class="brand-mark" width="34" height="34">
       <span class="brand-word">coginzo</span>
     </a>
 
@@ -85,6 +102,23 @@
       <a href="index.html#contact" class="nav-cta">Contact Us</a>
     </nav>
 
+    <!-- <button class="theme-toggle" id="themeToggle" aria-label="Switch to dark theme" type="button">
+      <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <circle cx="12" cy="12" r="4.5"></circle>
+        <line x1="12" y1="1.5" x2="12" y2="4"></line>
+        <line x1="12" y1="20" x2="12" y2="22.5"></line>
+        <line x1="4.2" y1="4.2" x2="5.9" y2="5.9"></line>
+        <line x1="18.1" y1="18.1" x2="19.8" y2="19.8"></line>
+        <line x1="1.5" y1="12" x2="4" y2="12"></line>
+        <line x1="20" y1="12" x2="22.5" y2="12"></line>
+        <line x1="4.2" y1="19.8" x2="5.9" y2="18.1"></line>
+        <line x1="18.1" y1="5.9" x2="19.8" y2="4.2"></line>
+      </svg>
+      <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M20.5 14.6c-1.1.4-2.3.6-3.5.6-5.5 0-10-4.5-10-10 0-1.2.2-2.4.6-3.5-4 1.5-6.9 5.4-6.9 9.9 0 5.8 4.7 10.5 10.5 10.5 4.5 0 8.4-2.9 9.9-6.9-.2 0-.4-.1-.6-.6z"></path>
+      </svg>
+    </button> -->
+
     <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
@@ -94,8 +128,8 @@
 <!-- ============ PAGE HERO ============ -->
 <section class="page-hero container" id="top">
   <span class="eyebrow">What We Offer</span>
-  <h1>Development, Design &amp; <span class="grad-text">Transparent Pricing</span></h1>
-  <p>From a first sketch to production infrastructure — here's exactly what we build and what it costs.</p>
+  <h1>IT Services, Development &amp; <span class="grad-text">Transparent Pricing</span></h1>
+  <p>Coginzo is an IT solutions company — from a first sketch to production infrastructure, here's exactly what we build and what it costs.</p>
 </section>
 
 <!-- ============ SERVICES ============ -->
@@ -183,7 +217,7 @@
   <div class="container footer-grid">
     <div class="footer-brand">
       <a href="index.html#top" class="brand">
-        <img src="assets/logo/logo-horizontal.png" alt="Coginzo — Code. Design. Deliver." class="footer-logo">
+        <img src="assets/logo/logo-horizontal.png" alt="Coginzo — Code. Design. Deliver." class="footer-logo" width="726" height="188">
       </a>
       <p>Building digital products that drive business growth.</p>
     </div>
@@ -204,6 +238,14 @@
       <a href="index.html#founders">Founders</a>
       <a href="index.html#testimonials">Testimonials</a>
       <a href="index.html#contact">Contact</a>
+    </div>
+
+    <div class="footer-links">
+      <h4>Legal</h4>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms-of-service.html">Terms of Service</a>
+      <a href="cookie-policy.html">Cookie Policy</a>
+      <a href="refund-policy.html">Refund &amp; Cancellation</a>
     </div>
   </div>
   <div class="footer-bottom">
