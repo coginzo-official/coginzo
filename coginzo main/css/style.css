@@ -565,6 +565,7 @@ a.trust-item:focus-visible{outline:2px solid var(--accent, #7c5cff); outline-off
 
 /* ===================== Pricing ===================== */
 .pricing-grid{display:grid; grid-template-columns:repeat(3, 1fr); gap:26px; align-items:stretch;}
+.pricing-grid:has(> .pricing-card:only-child){grid-template-columns:minmax(0,420px); justify-content:center;}
 .pricing-card{
   padding:38px 30px; display:flex; flex-direction:column; position:relative;
 }

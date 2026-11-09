@@ -197,6 +197,19 @@ const RATE_CARD = [
         featured: false
       }
     ]
+  },
+  {
+    id: "ats",
+    label: "ATS Resume",
+    tiers: [
+      {
+        tier: "Single Plan", name: "ATS-Friendly Resume", price: "₹349", period: "per resume",
+        desc: "A recruiter- and ATS-ready resume written around your target role.",
+        features: ["ATS-friendly, clean single-column layout", "Keyword-optimised for your target role", "Professionally formatted & proofread", "Delivered as editable DOCX + PDF"],
+        featured: false
+      }
+    ],
+    note: "Priced per resume. Prices are exclusive of GST/applicable taxes unless stated otherwise."
   }
 ];
 
