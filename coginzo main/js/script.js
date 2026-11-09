@@ -9,7 +9,8 @@ const SERVICES = [
   { icon: "⛁", title: "E-commerce Development", desc: "Storefronts built to convert browsers into buyers." },
   { icon: "⇄", title: "API Integration", desc: "Clean connections between the tools you already run." },
   { icon: "⚙", title: "Software Maintenance", desc: "Ongoing fixes, updates, and performance tuning." },
-  { icon: "◎", title: "IT Consulting", desc: "Straight advice on the right technology for your goals." }
+  { icon: "◎", title: "IT Consulting", desc: "Straight advice on the right technology for your goals." },
+  { icon: "▤", title: "ATS-Friendly CV / Resume", desc: "Clean, keyword-optimised resumes that pass applicant tracking systems and get you noticed." }
 ];
 
 const WHY = [
