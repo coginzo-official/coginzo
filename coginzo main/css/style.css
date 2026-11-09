@@ -674,6 +674,19 @@ a.trust-item:focus-visible{outline:2px solid var(--accent, #7c5cff); outline-off
   .grid-5, .grid-4, .grid-3, .timeline{grid-template-columns:1fr;}
 }
 
+/* ===================== Download buttons (rate card) ===================== */
+.cta-row{display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:12px; margin-top:44px;}
+.cta-row.cta-hero{margin-top:28px;}
+.cta-row.cta-inline{margin:8px 0 26px;}
+.cta-row .btn{white-space:normal; text-align:center; line-height:1.25;}
+@media (max-width:600px){
+  .cta-row{flex-direction:column; align-items:stretch; margin-top:32px;}
+  .cta-row .btn{width:100%; min-height:48px; padding:13px 20px;}
+  .hero-actions{gap:12px;}
+  .hero-actions .btn{flex:1 1 calc(50% - 6px); padding-left:16px; padding-right:16px;}
+  .hero-actions .btn-dl{flex:1 1 100%;}
+}
+
 /* ===================== Legal Pages ===================== */
 .legal-updated{
   display:inline-block; margin-top:10px; font-size:0.86rem; color:var(--text-faint);
